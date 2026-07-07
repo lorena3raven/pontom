@@ -15,24 +15,29 @@ export function Hero() {
       {/* gradiente mobile */}
       <div className="pointer-events-none absolute inset-0 z-20 bg-gradient-to-b from-background/90 via-background/82 to-background/96 lg:hidden" />
 
-      <div className="relative z-30 mx-auto grid min-h-screen max-w-[1280px] items-center px-6 py-12 lg:grid-cols-[0.92fr_1.08fr] lg:px-10 lg:py-14">
-        <div className="mx-auto max-w-[620px] pt-8 text-center lg:mx-0 lg:pt-0 lg:text-left">
+      <div className="relative z-30 mx-auto grid min-h-screen max-w-[1280px] items-center px-6 pt-0 pb-12 lg:grid-cols-[0.92fr_1.08fr] lg:px-10 lg:pt-2 lg:pb-14">
+        <div className="mx-auto max-w-[620px] text-center lg:mx-0 lg:text-left">
           <motion.div
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease }}
-            className="mx-auto mb-9 w-fit lg:mx-0 lg:mb-10"
-          >
-            <p className="text-[0.62rem] font-semibold uppercase tracking-[0.5em] text-gold/90 lg:text-[0.68rem]">
-              Ponto M Moda Íntima
-            </p>
-          </motion.div>
+  initial={{ opacity: 0, y: 14 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, ease }}
+  className="mx-auto mb-1 w-fit lg:mx-0 lg:mb-1"
+>
+  <Image
+    src="/logo.png"
+    alt="Ponto M Moda Íntima"
+    width={220}
+    height={110}
+    priority
+    className="h-auto w-[175px] sm:w-[190px] lg:w-[240px]"
+  />
+</motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.08, ease }}
-            className="editorial-title mx-auto max-w-[410px] text-[4.05rem] leading-[0.88] tracking-[-0.03em] text-offwhite sm:max-w-[520px] sm:text-[4.8rem] lg:mx-0 lg:max-w-[780px] lg:text-[6.4rem] xl:text-[7rem]"
+            className="editorial-title mx-auto max-w-[410px] text-[4.35rem] leading-[0.88] tracking-[-0.03em] text-offwhite sm:max-w-[520px] sm:text-[4.8rem] lg:mx-0 lg:max-w-[780px] lg:text-[6.4rem] xl:text-[7rem]"
           >
             <span className="block">Seu prazer.</span>
             <span className="mt-1 block text-[1.08em] text-gold">
