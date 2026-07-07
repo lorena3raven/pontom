@@ -1,0 +1,6 @@
+Coloque aqui o arquivo da fonte Kayonest renomeado como: kayonest.woff2
+
+Caminho esperado pelo projeto:
+public/fonts/kayonest.woff2
+
+Enquanto esse arquivo não existir, o site usa Sora como fallback.
