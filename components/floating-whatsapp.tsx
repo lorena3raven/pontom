@@ -26,7 +26,9 @@ export function FloatingWhatsApp() {
     <AnimatePresence>
       {visible && (
         <motion.a
-          href={site.whatsapp}
+         href={`${site.whatsapp}?text=${encodeURIComponent(
+  'Oi, vim do Google e quero conhecer os produtos da Ponto M'
+)}`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Fale conosco no WhatsApp"

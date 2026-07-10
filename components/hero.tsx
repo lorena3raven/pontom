@@ -63,10 +63,11 @@ export function Hero() {
           >
             <div className="w-full max-w-[340px] sm:max-w-[380px] lg:max-w-none">
               <WhatsAppButton
-                size="xl"
-                label="QUERO CONHECER AGORA"
-                className="h-12 w-full px-5 text-[0.72rem] sm:text-[0.9rem] lg:h-[68px] lg:w-auto lg:min-w-[350px] lg:px-10 lg:text-base"
-              />
+  size="xl"
+  label="QUERO CONHECER AGORA"
+  message="Oi, vim do Google e quero conhecer os produtos da Ponto M"
+  className="h-12 w-full px-5 text-[0.72rem] sm:text-[0.9rem] lg:h-[68px] lg:w-auto lg:min-w-[350px] lg:px-10 lg:text-base"
+/>
             </div>
 
             <p className="max-w-[300px] text-center text-[0.64rem] font-medium uppercase leading-5 tracking-[0.28em] text-champagne/65 lg:max-w-none lg:text-left lg:text-xs">

@@ -8,21 +8,25 @@ const categories = [
     name: 'Lingeries',
     desc: 'Renda, cetim e peças para valorizar cada detalhe.',
     img: '/cat-lingeries.png',
+    message: 'Oi, vim do Google e quero conhecer seus produtos de lingeries.',
   },
   {
     name: 'Sensuais',
     desc: 'Óleos, géis e produtos essenciais para novas sensações.',
     img: '/cat-cosmeticos.png',
+    message: 'Oi, vim do Google e quero conhecer seus produtos sensuais.',
   },
   {
     name: 'Vibradores',
     desc: 'Bem-estar íntimo com curadoria e total discrição.',
     img: '/cat-vibradores.png',
+    message: 'Oi, vim do Google e quero conhecer seus vibradores.',
   },
   {
     name: 'Fantasias',
     desc: 'Produções marcantes para momentos especiais.',
     img: '/cat-fantasias.png',
+    message: 'Oi, vim do Google e quero conhecer suas fantasias.',
   },
 ]
 
@@ -44,7 +48,7 @@ export function Categories() {
         {categories.map((cat, i) => (
           <Reveal key={cat.name} delay={i * 0.05}>
             <a
-              href={site.whatsapp}
+              href={`${site.whatsapp}?text=${encodeURIComponent(cat.message)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative flex min-h-[390px] overflow-hidden rounded-[2rem] border border-gold/12 bg-card"
@@ -56,6 +60,7 @@ export function Categories() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-105"
               />
+
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/35 to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/20 to-transparent" />
 
@@ -64,13 +69,16 @@ export function Categories() {
                   <span className="text-xs font-bold uppercase tracking-[0.36em] text-gold/90">
                     {String(i + 1).padStart(2, '0')}
                   </span>
+
                   <h3 className="editorial-title mt-3 text-[3.4rem] text-offwhite sm:text-[4.6rem]">
                     {cat.name}
                   </h3>
+
                   <p className="mt-3 max-w-sm text-sm leading-6 text-muted-foreground sm:text-base">
                     {cat.desc}
                   </p>
                 </div>
+
                 <span className="mb-2 flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold transition-all duration-300 group-hover:bg-gold group-hover:text-primary-foreground">
                   <ArrowUpRight className="h-6 w-6" />
                 </span>

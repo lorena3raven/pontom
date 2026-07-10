@@ -35,10 +35,11 @@ export function FinalCta() {
           <div className="mt-8 sm:mt-10">
             <div className="w-full max-w-[330px] sm:max-w-none">
               <WhatsAppButton
-                size="xl"
-                label="QUERO CONHECER"
-                className="h-12 w-full px-5 text-[0.8rem] sm:h-[68px] sm:w-auto sm:px-10 sm:text-base"
-              />
+  size="xl"
+  label="QUERO CONHECER"
+  message="Oi, vim do Google e quero conhecer os produtos da Ponto M"
+  className="h-12 w-full px-5 text-[0.8rem] sm:h-[68px] sm:w-auto sm:px-10 sm:text-base"
+/>
             </div>
           </div>
         </div>
